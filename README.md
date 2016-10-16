@@ -52,6 +52,7 @@ Az adatok védelme érdekében lehetőség van regisztrációra, majd bejelentke
 
 ##6. Használati esetek:
 
+![](docs/image/hasznalatiesetruhak.png)
 
 ##7. Folyamatok meghatározása:
 
