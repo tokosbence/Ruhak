@@ -88,7 +88,13 @@ Az adatok védelme érdekében lehetőség van regisztrációra, majd bejelentke
 ####*POST/ruha/kiegészítő/create:új ruha/kiegészítő felvitt adatok küldése
 
 ##10. Oldalvázlatok
+![_](docs/images/Oldalvazlat1.png)
 
+![_](docs/images/Oldalvazlat2.png)
+
+![_](docs/images/Oldalvazlat3.png)
+
+![_](docs/images/Oldalvazlatok4.png)
 
 ##11. Adatmodell
 ![_](docs/images/Adatmodell.png)
