@@ -83,9 +83,13 @@ Az adatok védelme érdekében lehetőség van regisztrációra, majd bejelentke
 ####*POST/login:bejelentkezési adatok feltöltése
 ####*GET/profile:profiladatok
 ####*GET/kategoriak:kategoria lista
+####*POST/ruha/kiegeszito/:new:komment felküldése
 ####*GET/ruha/kiegészítő/:id:ruha/kiegészítő megtekintése
 ####*GET/ruha/kiegészítő/create:új ruha/kiegészítő űrlap
 ####*POST/ruha/kiegészítő/create:új ruha/kiegészítő felvitt adatok küldése
+####*GET/ruha/kiegeszito/delete: ruha/kiegeszitő törlése
+####*GET/ruha/kiegeszito/edit: ruha/kiegeszito modositasa
+####*POST/ruha/kiegeszito/edit: modositott adatok felkuldese
 
 ##10. Oldalvázlatok
 ![_](docs/images/Oldalvazlat1.png)
