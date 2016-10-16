@@ -52,10 +52,15 @@ Az adatok védelme érdekében lehetőség van regisztrációra, majd bejelentke
 
 ##6. Használati esetek:
 
-![](docs/image/hasznalatiesetruhak.png)
+![_](docs/images/hasznalatiesetruhak.png)
 
 ##7. Folyamatok meghatározása:
+###Bejelentkezés:
+![_](docs/images/bejelentkezes.png)
 
+###Új ruha/kiegészitő:
+
+![_](docs/images/ujruha.png)
 
 
 ##8. Oldaltérkép:
