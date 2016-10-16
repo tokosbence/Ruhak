@@ -99,6 +99,6 @@ Az adatok védelme érdekében lehetőség van regisztrációra, majd bejelentke
 ##11. Adatmodell
 ![_](docs/images/Adatmodell.png)
 
-##12. Adatbázisterv
+
 
 
