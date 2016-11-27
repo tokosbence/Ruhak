@@ -1,0 +1,24 @@
+{% extends 'master' %}
+
+{% block title %}{{ ruha.name }}{% endblock %}
+{% block content %}
+  <h1>{{ ruha.name }}</h1>
+  <p><a href="{{ 'recipe_list' | route }}?category={{ ruha.category.id }}">{{ ruha.category.name }}</a> · beküldte <em>{{ recipe.created_by.nickname }}</em></p>
+  {% if ruhaImage %}
+  <img src="{{ ruhaImage }}">
+  {% endif %}
+  <h2>Anyag</h2>
+  <pre>{{ ruha.anyag }}</pre>
+  <h2>Szin</h2>
+  <pre>{{ ruha.szin }}</pre>
+  <h2>Leírás</h2>
+  <p>{{ ruha.description }}</p>
+  {% if currentUser %}
+  {% if currentUser.id == ruha.created_by.id %}
+  <div>
+    <a class="btn btn-primary" href="{{ 'ruha_edit' | route({id: ruha.id}) }}">Módosítás</a>
+    <a class="btn btn-danger" href="{{ 'ruha_delete' | route({id: ruha.id}) }}">Törlés</a>
+  </div>
+  {% endif %}
+  {% endif %}
+{% endblock %}
