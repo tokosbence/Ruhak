@@ -103,6 +103,38 @@ Az adatok védelme érdekében lehetőség van regisztrációra, majd bejelentke
 ##11. Adatmodell
 ![_](docs/images/Adatmodell.png)
 
+##12. Könyvtárstruktúra, funkciók
+     ###App
+         #####Controllers
+             #####RuhakController.js
+             #####UserController.js
+         #####Model
+             #####Ruha.js
+             #####User.js
+             #####Category.js
+             #####Token.js
+     ###Database
+        #####Migration
+             #####create_users_table.js
+             #####categories.js
+             #####ruhas.js
+     ###Resources
+        #####views
+             #####login.njk
+             #####main.njk
+             #####master.njk
+             #####profile.njk
+             #####register.njk
+             #####ruha.njk
+             #####ruha_create.njk
+             #####ruha_edit.njk
+     ###Script
+         #####delete.js
+         #####main.js
+         #####okos-anyag.js
+             
+##13. Tesztelés
 
+ A Selenium IDE tesztek a teszt mappában találhatok.
 
 
