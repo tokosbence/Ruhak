@@ -1,6 +1,11 @@
 {% extends 'master' %}
 
 {% block title %}Ruha beküldése{% endblock %}
+
+
+
+
+
 {% block content %}
   <h1>Ruha beküldése</h1>
   {% if old('errors') %}
@@ -14,7 +19,7 @@
   {% endif %}
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <form class="form-horizontal" action="{{ 'do_ruha_create' | route }}" method="POST" enctype="multipart/form-data">
+      <form class="form-horizontal" action="{{ 'do_ruha_create' | route }}" method="POST" enctype="multipart/form-data"  data-toggle="validator" >
         {{ csrfField }}
         <div class="form-group">
           <label for="inputName" class="col-sm-4 control-label">Ruha neve</label>

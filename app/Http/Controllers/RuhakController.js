@@ -8,6 +8,7 @@ const Validator = use('Validator')
 const Helpers = use('Helpers')
 const fs = use('fs')
 class RuhakController {
+ 
     *main(request, response){
         
         const categories = yield Category.all()
@@ -236,7 +237,6 @@ class RuhakController {
     }
 
     const recipes = yield Ruha.query()
-      .active()
       .where(function () {
         if (filters.category > 0) this.where('category_id', filters.category)
         if (filters.createdBy > 0) this.where('created_by_id', filters.createdBy)
@@ -248,7 +248,7 @@ class RuhakController {
     const categories = yield Category.all()
     const users = yield User.all()
 
-    yield response.sendView('ruha', {
+    yield response.sendView('ruhas', {
       ruha: ruha.toJSON(),
       categories: categories.toJSON(),
       users: users.toJSON(),

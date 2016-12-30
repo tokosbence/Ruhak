@@ -29,6 +29,7 @@ Route.post('/profile/edit_password', 'UserController.doPasswordEdit').as('do_pas
 
 
 Route.get('/', 'RuhakController.main').as('main')
+Route.get('/ruha', 'RuhakController.index').as('ruha_list')
 Route.get('/ruha/create', 'RuhakController.create').as('ruha_create').middleware('auth')
 Route.post('/ruha/create', 'RuhakController.doCreate').as('do_ruha_create').middleware('auth')
 Route.get('/ruha/:id', 'RuhakController.show').as('ruha_page')
